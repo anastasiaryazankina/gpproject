@@ -1,0 +1,128 @@
+body
+  margin: 0
+  background-color: #c4f9fc
+
+.header-block
+  width: 100%
+  margin: 0
+  background-image: url('../images/222or.png')
+  position: fixed
+  z-index: 101
+
+.header-block__item
+  list-style: none
+  display: inline-block
+  background: #ccc
+  &:hover
+    background: #eee
+
+.item-header-block__link
+  color: #222
+  padding: 5px 20px
+  text-decoration: none
+  display: block
+
+.header-block__menu
+  float: right
+  margin-right: 150px
+
+.inform
+  clear: both
+  float: right
+  position: relative
+
+.inform__anchor
+  text-decoration: none
+
+.inform__title
+  text-decoration: none
+  color: #7a0625
+
+.inform__text
+  display: block
+  margin: 50px 320px 20px 0
+  color: #7a0625
+
+.inform__anchor
+  margin: 30px 530px 110px auto
+  color: #7a0625
+
+.anchor-inform__text
+  border: 2px solid black
+  padding: 5px
+  border-radius: 10px
+  margin-right: 440px
+  color: #7a0625
+
+.inform__window
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.6)
+  z-index: 999
+  -webkit-transition: opacity 400ms ease-in
+  -moz-transition: opacity 400ms ease-in
+  transition: opacity 400ms ease-in
+  display: none
+  pointer-events: none
+  border-radius: 10px
+  &:target
+    display: block
+    pointer-events: auto
+
+.inform__secondwindow
+  width: 35%
+  position: relative
+  margin: 20% auto
+  padding: 40px
+  border-radius: 5px
+  background: #f2f2f2
+  box-shadow: 0px 0px 20px 2px
+
+.secondwindow-inform__close
+  background: #a50331
+  color: #ffffff
+  line-height: 25px
+  position: absolute
+  right: -12px
+  text-align: center
+  top: -10px
+  width: 24px
+  text-decoration: none
+  font-weight: bold
+  -webkit-border-radius: 12px
+  -moz-border-radius: 12px
+  border-radius: 12px
+  -moz-box-shadow: 1px 1px 3px #000
+  -webkit-box-shadow: 1px 1px 3px #000
+  box-shadow: 1px 1px 3px #000
+  &:hover
+    background: #990000
+
+.content
+  z-index: 100
+  position: absolute
+  width: 60%
+  margin: 400px auto 500px 270px
+  font-weight: 650
+  font-stretch: semi-expanded
+  color: #7a0625
+
+.clear:after
+  content: "$nbsp"
+  display: block
+  clear: both
+  visibility: hidden
+
+.site-footer
+  background-color: #efdee3
+  position: absolute
+  bottom: 0
+  width: 100%
+  position: fixed
+
+.copyright__text
+  text-align: center
+  color: #7a0625
